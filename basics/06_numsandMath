@@ -1,0 +1,31 @@
+const score =100
+console.log(score)//output 100
+const balance =new Number(100)//specifically defined as NUmber properties also available
+console.log(balance);//[Number:100]
+
+// methods
+console.log(balance.toString().length);
+console.log(balance.toFixed(2))//100.00
+
+const otherNumber =23.77368
+console.log(otherNumber.toPrecision(3));//23.8
+console.log(otherNumber.toPrecision(1));//****2e+3 */
+
+const hundreds=1000000
+console.log(hundreds.toLocaleString('en-IN'));
+
+
+//================MATHS++++++++++++++++
+console.log(Math);//contain a lot of properties 
+console.log(Math.abs(-4));//changes to positive 
+console.log(Math.ceil(4.3));//5
+console.log(Math.round(4.7));//5
+
+//MOST IMPORTANT 
+console.log(Math.random());//value lies between 0 and 1
+console.log((Math.random()*10)+1);// to avoid 0 value that's why we add 1
+console.log(Math.floor(Math.random()*10)+1)
+// THE MOST IMPORTANT FROM THE WHOLE VIDEO 
+const min =10; 
+const max=20
+console.log(Math.floor(Math.random()*(max-min+1))+min)// LEARN THIS 
